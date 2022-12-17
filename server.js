@@ -2,7 +2,7 @@ const express = require("express");
 const bud = require("basic-instagram-user-details");
 const cors = require("cors");
 
-const PORT = 4000 || process.env.PORT;
+const PORT = process.env.PORT || 4566;
 
 const app = express();
 app.listen(PORT, () => {
