@@ -13,7 +13,7 @@ app.listen(PORT, () => {
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res?.send("I am working.");
+  res?.send("Uhh 😰!!!!! You are lost!");
 });
 
 app.get("/user/:username", async (req, res) => {
