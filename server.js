@@ -19,7 +19,6 @@ app.get("/", (req, res) => {
 app.get("/user/:username", async (req, res) => {
   const { username } = req?.params;
   if (username) {
-    console.log(await bud(username, "followers").data);
     let resp = {
       id: await (await bud(username, "id")).data,
       username: await (await bud(username, "username")).data,
